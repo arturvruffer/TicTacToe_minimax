@@ -260,7 +260,7 @@ int main(void){
     printf("Hello and welcome to TicTacToe! \nDo you want to play as [X] or as [O]? ");
     while (player != 'X' && player != 'O'){
         scanf("%c", &input);
-        if (input == 'X' || input == 'O' || input == 'X' || input == 'O'){
+        if (input == 'X' || input == 'O' || input == 'x' || input == 'o'){
             if (input == 'X' || input == 'x'){
                 player = 'X';
                 ai = 'O';
@@ -285,6 +285,12 @@ int main(void){
         print_board();
         printf("\nThe game ended in a tie!\n\n");
     }
+
+    char ch;
+    printf("Press ENTER to close the game:");
+    scanf("%c", &ch);
+    getchar();
+    
 }
 
 
